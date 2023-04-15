@@ -1,8 +1,17 @@
-steps:
-- uses: actions/checkout@v3
-- name: Use Node.js
-  uses: actions/setup-node@v3
-  with:
-    node-version: '12.x'
-- name: Install dependencies
-  run: npm install
+{
+  "name": "tdd-node-sample",
+  "version": "1.1.0",
+  "description": "Ejemplo de Desarrollo Guiado por Test en Node JS",
+  "main": "index.js",
+  "scripts": {
+      "test": "mocha",
+      "test1": "mocha test/test",
+      "test2": "mocha test/test2"
+  },
+  "author": "Maite Chirivella",
+  "license": "MIT",
+  "devDependencies": {
+      "mocha": "^8.3.2",
+      "should": "^13.2.3"
+  }
+}
